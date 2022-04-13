@@ -42,7 +42,7 @@ $app->singleton(
 );
 
 // Register DomPDF
-$app->register(\Barryvdh\DomPDF\ServiceProvider::class);
+//$app->register(\Barryvdh\DomPDF\ServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
