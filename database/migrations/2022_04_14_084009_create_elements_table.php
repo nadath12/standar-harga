@@ -18,9 +18,9 @@ class CreateElementsTable extends Migration
             $table->string('element_code',100);
             $table->string('element_name')->unique();
             $table->enum('element_type',['text','file','email','password','radio','checkbox','button']);
-            $table->text('element_html');
-            $table->text('element_js');
-            $table->string('desciption',255);
+            $table->text('element_html')->nullable;
+            $table->text('element_js')->nullable();
+            $table->string('desciption',255)->nullable();
             $table->timestamps();
         });
     }

@@ -16,16 +16,16 @@ class CreateMenusTable extends Migration
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
             $table->string('menu_name',50);
-            $table->string('icon',50);
-            $table->text('menu_link');
-            $table->text('menu_deskripsi');
-            $table->string('controller',20);
-            $table->string('function',30);
-            $table->string('input_type',50);
-            $table->integer('level');
-            $table->integer('menu_top_id');
-            $table->boolean('is_active');
-            $table->integer('urut');
+            $table->string('icon',50)->nullable();
+            $table->string('menu_link',100);
+            $table->text('menu_deskripsi')->nullable();
+            $table->string('controller',20)->nullable();
+            $table->string('function',30)->nullable();
+            $table->string('input_type',50)->nullable();
+            $table->integer('level')->default(0);
+            $table->integer('menu_top_id')->default(0);
+            $table->boolean('is_active')->default(true);
+            $table->integer('urut')->default(0);
             $table->timestamps();
         });
     }
