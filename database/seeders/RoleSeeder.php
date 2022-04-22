@@ -20,6 +20,7 @@ class RoleSeeder extends Seeder
                 'id' => '1',
                 'role_name' => 'ADMIN',
                 'keterangan' => 'Administrator',
+                'tupoksi' => '',
                 'created_at' => now(),
                 'updated_at' => now()
             ],
@@ -27,20 +28,31 @@ class RoleSeeder extends Seeder
                 'id' => '2',
                 'role_name' => 'OPERATOR',
                 'keterangan' => 'Operator BPKAD',
+                'tupoksi' => '',
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
                 'id' => '3',
-                'role_name' => 'VERIFIKATOR',
-                'keterangan' => 'Tim Verifikator',
+                'role_name' => 'KEPALA_BPKAD',
+                'keterangan' => 'Kepala BPKAD',
+                'tupoksi' => '',
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
                 'id' => '4',
+                'role_name' => 'VERIFIKATOR',
+                'keterangan' => 'Tim Verifikator',
+                'tupoksi' => '',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'id' => '5',
                 'role_name' => 'OPD',
                 'keterangan' => 'OPD Perangkat Daerah',
+                'tupoksi' => '',
                 'created_at' => now(),
                 'updated_at' => now()
             ],

@@ -17,6 +17,7 @@ class CreateRolesTable extends Migration
             $table->id();
             $table->string('role_name', 100);
             $table->string('keterangan', 255)->nullable();
+            $table->text('tupoksi')->nullable();
             $table->timestamps();
         });
     }

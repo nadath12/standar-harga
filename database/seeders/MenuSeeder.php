@@ -20,7 +20,7 @@ class MenuSeeder extends Seeder
             'menu_name' => 'Home',
             'icon' => 'ni ni-tv-2',
             'menu_link' => 'home',
-            'menu_deskripsi'=> '',
+            'menu_deskripsi'=> 'Halaman Home',
             'level' => '0',
             'menu_top_id' => '0',
             'is_active' => '1',
