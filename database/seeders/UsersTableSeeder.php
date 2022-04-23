@@ -4,6 +4,7 @@ namespace Database\Seeders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Faker\Factory as Faker;
 
 class UsersTableSeeder extends Seeder
 {
@@ -14,6 +15,8 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker::create('id_ID');
+
         DB::table('users')->insert([
             'name' => 'Admin Admin',
             'email' => 'admin@argon.com',

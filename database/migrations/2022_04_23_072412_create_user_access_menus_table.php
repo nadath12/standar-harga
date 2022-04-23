@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJadwalSshesTable extends Migration
+class CreateUserAccessMenusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateJadwalSshesTable extends Migration
      */
     public function up()
     {
-        Schema::create('jadwal_sshes', function (Blueprint $table) {
+        Schema::create('user_access_menus', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_jadwal',255);
-            $table->dateTime('date_start');
-            $table->dateTime('date_finish');
-            $table->year('tahun');
+            $table->integer('role_id');
+            $table->integer('menu_id');
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateJadwalSshesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jadwal_sshes');
+        Schema::dropIfExists('user_access_menus');
     }
 }
