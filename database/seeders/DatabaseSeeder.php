@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([ElementsSeeder::class]);
         $this->call([JadwalSshSeeder::class]);
+        $this->call([JenisSshSeeder::class]);
         $this->call([KodeBelanjaSeeder::class]);
         $this->call([MenuSeeder::class]);
         $this->call([RequestSshSeeder::class]);
